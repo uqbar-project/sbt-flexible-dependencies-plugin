@@ -1,5 +1,5 @@
 SBT: Flexible Dependencies Plugin [![Build Status](https://travis-ci.org/uqbar-project/sbt-flexible-dependencies-plugin.svg?branch=master)](https://travis-ci.org/uqbar-project/sbt-flexible-dependencies-plugin)
-==========
+=================================
 
 Sometimes you want to work on a project and its dependencies at the same time, but they are not related closely enough
 as to be considered part of the same super-project. Of course, you could define these as *project dependencies*, but
