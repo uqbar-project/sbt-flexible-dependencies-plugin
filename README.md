@@ -1,4 +1,4 @@
-SBT: Flexible Dependencies Plugin [![Build Status](https://travis-ci.org/uqbar-project/sbt-flexible-dependencies-plugin.svg?branch=master)](https://travis-ci.org/uqbar-project/sbt-flexible-dependencies-plugin)
+﻿SBT: Flexible Dependencies Plugin [![Build Status](https://travis-ci.org/uqbar-project/sbt-flexible-dependencies-plugin.svg?branch=master)](https://travis-ci.org/uqbar-project/sbt-flexible-dependencies-plugin)
 =================================
 
 Sometimes you want to work on a project and its dependencies at the same time, but they are not related closely enough
@@ -12,12 +12,10 @@ This *SBT* plugin allows the creation of projects that automatically treats *lib
 Setup
 -----
 
-To include this plugin in your *SBT* build, just add the following lines to your `project/plugins.sbt` file, or your
+To include this plugin in your *SBT* build, just add the following line to your `project/plugins.sbt` file, or your
 global *SBT* configuration:
 
 ```scala
-resolvers += "Uqbar Central" at "http://uqbar-wiki.org/mvn/releases"
-
 addSbtPlugin("org.uqbar" % "sbt-flexible-dependencies" % "latest.integration")
 ```
 

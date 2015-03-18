@@ -11,9 +11,9 @@ object FlexibleDependenciesPlugin extends Plugin {
 			val (projectDeps, libraryDeps) = dependencies.partition{ dependency => file(s"../${dependency.name}").exists }
 			val baseProject = project
 				.in(file("."))
-				.copy(settings = Defaults.defaultSettings ++ Seq(libraryDependencies ++= libraryDeps))
+				.copy(settings = Defaults.coreDefaultSettings ++ Seq(libraryDependencies ++= libraryDeps))
 
-			(baseProject /: projectDeps){ (project, dependency) => project dependsOn file(s"../${dependency.name}") }
+			(baseProject /: projectDeps){ (project, dependency) => project dependsOn RootProject(file(s"../${dependency.name}")) }
 		}
 	}
 }
